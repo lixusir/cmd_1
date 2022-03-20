@@ -12,8 +12,8 @@ class User extends Validate
     protected $rule = [
         'username' => 'require|regex:\w{3,30}|unique:user',
         'nickname' => 'require|unique:user',
-        'password' => 'regex:\S{6,30}',
-        'email'    => 'require|email|unique:user',
+        //'password' => 'regex:\S{6,30}',
+        //'email'    => 'require|email|unique:user',
         'mobile'   => 'unique:user'
     ];
 
